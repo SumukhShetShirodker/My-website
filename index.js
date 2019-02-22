@@ -1,25 +1,26 @@
-/**
- * Web Server
- * Nodejs & Express.js
- */
-const express=require('express')
-const app=express()
-var port=process.env.PORT||7500
-app.disable('x-powered-by')
+const express = require('express')
+const app = express()
 app.set('view engine','ejs')
-//EJS
-app.get("/",(req,res)=>{
-  res.render("index")
+//main code
+app.get('/',(req,res)=>{
+  res.render('index')
 })
-//"__dirname" stuff's
-app.get("/styles/45876987.css",(req,res)=>{
-  res.sendFile(__dirname + `/src/styles/styles.css` )
+app.get('/static/htmlplusstylescss',(req,res)=>{
+  res.sendFile(__dirname+'/src/css/styles.css')
 })
-
-app.get("/scripts/45876987.typescriptakagoodjavascript",(req,res)=>{
-  res.sendFile(__dirname + `/src/js/app.js` )
+app.get('/static/_java_script',(req,res)=>{
+  res.sendFile(__dirname+'/src/js/app.js')
 })
-//listening stuff
-app.listen(port,()=>{
-  console.log(`Go on http://localhost:${port}/`)
+app.get('/static/images/image/insta',(req,res)=>{
+  res.sendFile(__dirname+'/src/images/insta.webp')
+})
+app.get('/static/images/image/github',(req,res)=>{
+  res.sendFile(__dirname+'/src/images/gh.webp')
+})
+app.get('/static/images/image/yt',(req,res)=>{
+  res.sendFile(__dirname+'/src/images/yt.webp')
+})
+//listenig ports
+app.listen(7070,()=>{
+  console.log('running on Port 7070');
 })

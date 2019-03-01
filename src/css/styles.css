@@ -13,9 +13,13 @@ a{
   color:#FAFAFA;
   text-decoration: none;
 }
-.home{
+.home,.about{
   float: left;
 }
 .insta,.fb,.yt{
   float: right;
+}
+div.about-me,div.how{
+  background-color:  #2c2237;
+  color:#FAFAFA;
 }

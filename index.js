@@ -3,7 +3,10 @@ const app = express()
 app.set('view engine','ejs')
 //main code
 app.get('/',(req,res)=>{
-  res.render('index')
+  res.render('index.ejs')
+})
+app.get('/about',(req,res)=>{
+  res.render('about.ejs')
 })
 app.get('/static/htmlplusstylescss',(req,res)=>{
   res.sendFile(__dirname+'/src/css/styles.css')

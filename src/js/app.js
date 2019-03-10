@@ -1,3 +1,1 @@
-function name() {
-  document.write("Hello World!")
-}
+//write service worker

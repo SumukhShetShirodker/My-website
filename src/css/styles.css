@@ -19,7 +19,31 @@ a{
 .insta,.fb,.yt{
   float: right;
 }
-div.about-me,div.how{
+div.how{
   background-color:  #2c2237;
   color:#FAFAFA;
+}
+.banner{
+  background-image: url('/static/images/image/me');
+  background-repeat: no-repeat;
+  background-position: center;
+  height:calc(100vh - 30px);width: 100%;
+  background-size: cover;
+}
+.info{
+  text-align: center;
+  font-weight: 200;
+  color: #FAFAFA;
+  font-size: 3em;
+}
+.info-2{
+  text-align: center;
+  font-weight: 200;
+  color: #FAFAFA;
+}
+footer{
+  background: #2c2237;
+}
+.inst,.git,.you{
+  float:center;
 }

@@ -23,7 +23,10 @@ app.get('/static/images/image/github',(req,res)=>{
 app.get('/static/images/image/yt',(req,res)=>{
   res.sendFile(__dirname+'/images/yt.webp')
 })
+app.get('/static/images/image/me',(req,res)=>{
+  res.sendFile(__dirname+'/images/me.jpg')
+})
 //listenig ports
-app.listen(7070,()=>{
-  console.log('running on Port 7070');
+app.listen(7070,_=>{
+  console.log(`running on Port 7070`);
 })

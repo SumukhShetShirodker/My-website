@@ -5,16 +5,15 @@ function initplayer(){
 	//Handlers
 	vid = document.getElementById('video');
 	playbtn = document.getElementById('playbtn');
-  seekbar=document.getElementById('seekbar');
-	curtimetxt=document.getElementById('curtime');
-	durtimetxt = document.getElementById('durtimetxt');
+  //seekbar=document.getElementById('seekbar');
+	//curtimetxt=document.getElementById('curtime');
+	//durtimetxt = document.getElementById('durtimetxt');
 	mutebtn=document.getElementById('mutebtn');
 	fullscreen=document.getElementById('screenbtn');
 	//Events
 	playbtn.addEventListener("click",playPause);
-	vid.addEventListener("click",playPause);
-	seekbar.addEventListener("change", vidSeek);
-	vid.addEventListener("timeupdate", seektimeupdate);
+	//seekbar.addEventListener("change", vidSeek);
+	//vid.addEventListener("timeupdate", seektimeupdate);
 	mutebtn.addEventListener("click", onMute);
 	fullscreen.addEventListener("click",fllscreen);
 }

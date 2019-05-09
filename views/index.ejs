@@ -1,69 +1,22 @@
 <!doctype html>
-<html lang='en'>
+<html lang="en">
 <head>
-<meta charset='UTF-8'>
-<meta name='viewport' content='width=device-width, initial-scale=1.0'>
-<meta http-equiv='X-UA-Compatible' content='ie=edge,chrome=1'>
-<title>Sumukh Shirodker</title>
-<link rel="stylesheet" href="/static/htmlplusstylescss">
-<script src="/static/_java_script"></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Vlogger</title>
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/app.js"></script>
 </head>
 <body>
-  <header>
-    <a href="/" class="home">HOME</a>
-    <a href="/about" class="about">ABOUT</a>
-    <a href="https://instagram.com/sumukhshirodkar_" class="insta" title="My Instagram">
-      <img src="/static/images/image/insta" width="25" height="25">
-    </a>
-    <a href="https://www.youtube.com/channel/UCYDslel3lQX0mLoqA9TqWDg" class="yt">
-      <img src="/static/images/image/yt" title="My YouTube" width="25" height="25">
-    </a>
-    <a href="https://github.com/SumukhShetShirodker" class="fb">
-      <img src="/static/images/image/github" width="25" title="My Github" height="25">
-    </a>
-  </header>
-  <main>
-    <section class="banner"><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-    <br><br><br><h1 class="info">SUMUKH SHIRODKER.</h1>
-      <h2 class="info-2">A self-learning software developer.Who is not that great in photos</h2>
-    </section>
-    <div class="how">
-      <br><br>
-      <h3>WEBSITE ARCHITECTURE</h3>
-      <h3>Front end</h3>EJS + CSS + JAVASCRIPT
-      <br>
-      <li>EJS is used as a replacement of HTML.I Don't actually know why I used it just wanted to try something new ,I guess.I can also write JavaScript by a HTML rendering language, That is why I am using it.</li>
-      <li>I wrote lines of code for styling(CSS) and scripting(JS). You may not see most of it because I had to fix bugs in my scripts and my styles.I am using new image extension called "WebP". I changed all my "PNG" to "WEBP" because "PNG" was becoming a pain in the ass (while loading .png images) .</li>
-      <br>
-      <h3>Backend Server</h3>NODE JS + EXPRESS<br>
-      <li>I used a Web Framework called "Express.js", which is a Fast, unopinionated, minimalist and most used web framework for Node.js.</li>
-      <li>It was pretty good experience working with Node.Js. I recommend you using it.</li><br><br><br>
-    </div>
-    <div class="about-me"><br><br>
-      <h2>Things I need to learn:</h2>
-      <h3>
-        <li>DataBase.(mostly MongoDB)</li>
-        <li>Authentication and Security.</li>
-        <li>Machine learning.</li>
-        <li>Blockchain.</li>
-        <li>To get a Car license.(cause I am just 13 years old).</li><br><br>
-      </h3>
-    </div>
-  </main>
-  <footer>
-    <div class="footer">
-      <center>
-          <a href="https://instagram.com/sumukhshirodkar_" class="inst" title="My Instagram">
-            <img src="/static/images/image/insta" width="50" height="50">
-          </a>
-          <a href="https://www.youtube.com/channel/UCYDslel3lQX0mLoqA9TqWDg" class="you">
-            <img src="/static/images/image/yt" title="My YouTube" width="50" height="50">
-          </a>
-          <a href="https://github.com/SumukhShetShirodker" class="git">
-            <img src="/static/images/image/github" width="50" title="My Github" height="50">
-          </a>
-      </center>
-    </div>
-  </footer>
+    <header><h1 class="brand">Vlogger</h1></header>
+    <main>
+        <video src="media/one.mp4" id="video" tabindex="-1" onclick="playPause()" autoplay="autoplay"></video>
+        <div id="vid-controls">
+            <button id="playbtn">►</button>
+            <button id="mutebtn">🔊</button>
+        </div>
+    </main>
+    <footer><p class="product">© Sumukh Shirodker Production.</p></footer>
 </body>
 </html>

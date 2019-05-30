@@ -8,6 +8,9 @@ app.use(express.static(path.join(__dirname + '/src')))
 app.get('/',(req,res)=>{
   res.render('index.ejs')
 })
+app.get('/login',(req,res)=>{
+  res.render('login.ejs')
+})
 //listenig ports
 app.listen(PORT,()=>{
   console.log(`running on Port ${PORT}`);

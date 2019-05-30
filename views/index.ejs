@@ -5,18 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 <title>Vlogger</title>
-<link rel="stylesheet" href="css/styles.css">
-<script src="js/app.js"></script>
+<link rel="stylesheet" href="/css/styles.css">
+<script src="/js/app.js"></script>
 </head>
 <body>
-    <header><h1 class="brand">Vlogger</h1></header>
-    <main>
-        <video src="media/one.mp4" id="video" tabindex="-1" onclick="playPause()" autoplay="autoplay"></video>
-        <div id="vid-controls">
-            <button id="playbtn">►</button>
-            <button id="mutebtn">🔊</button>
-        </div>
-    </main>
-    <footer><p class="product">© Sumukh Shirodker Production.</p></footer>
+	<header>
+		<a href="/" class="brand">
+			<h1 class="brand">Vlogger</h1>
+		</a>
+	<nav>
+		<a href="/login">Login</a>
+		<a href="/masthead">Masthead</a>
+		<a href="/about">About</a>
+	</nav>
+	</header>
+	<main>
+			<input type="file" onchange="previewFile()"><br>
+			<img src="" height="200" alt="Image preview...">
+	</main>
+	<footer><p class="product">© Sumukh Shirodker Production.</p></footer>
 </body>
 </html>

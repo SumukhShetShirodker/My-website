@@ -23,3 +23,21 @@ video{
   height: 500px;
   background-color:black;
 }
+button{
+  background:transparent;
+  border:0;
+  font-size: 30px;
+}
+nav{
+  float:right;
+}
+a{
+  color:#f7f6f8;
+  text-decoration:none;
+}
+a:hover{
+  text-decoration:underline;
+}
+.brand:hover{
+  text-decoration: none;
+}
